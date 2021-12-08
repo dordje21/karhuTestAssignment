@@ -1,0 +1,45 @@
+@import url(//db.onlinewebfonts.com/c/031da03967812d134ed68febd3ba78a9?family=GT+America);
+
+@font-face {
+    font-family: "GT America" !important;
+    src: url("//db.onlinewebfonts.com/t/031da03967812d134ed68febd3ba78a9.eot");
+    src: url("//db.onlinewebfonts.com/t/031da03967812d134ed68febd3ba78a9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/031da03967812d134ed68febd3ba78a9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/031da03967812d134ed68febd3ba78a9.woff") format("woff"), url("//db.onlinewebfonts.com/t/031da03967812d134ed68febd3ba78a9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/031da03967812d134ed68febd3ba78a9.svg#GT America") format("svg");
+}
+
+* {
+    font-family: "GT America" !important;
+    font-style: normal;
+}
+
+.karhu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 27px;
+    color: white;
+    text-decoration: none;
+    width: 240px;
+    height: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: .25s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -ms-transition: .25s;
+    -o-transition: .25s;
+}
+
+.karhu-link:hover {
+    transform: scale(1.025);
+    -webkit-transform: scale(1.025);
+    -moz-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    -o-transform: scale(1.025);
+}
+
+
+@media (max-width: 480px) {
+    .karhu-link {
+        width: 180px;
+    }
+}

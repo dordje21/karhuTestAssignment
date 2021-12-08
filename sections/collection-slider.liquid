@@ -1,0 +1,51 @@
+{{ 'collection-slider.css' | asset_url | stylesheet_tag }}
+
+<section class="collection-slider__wrapper">
+    <div class="collection-slider" data-slick='{"slidesToShow": 3.5, "slidesToScroll": 4}'
+        id="collection-slider__karhu">
+        {% for block in section.blocks %}
+        {% if block.type == "collection_item" %}
+        <div class="collection-slider__item">
+            <div class="collection-slider__item_img-wrapper">
+                <img src="{{ block.settings.collection.image | img_url: 'master' }}"
+                    alt="{{ block.settings.collection.title }}" class="collection-slider__item_img">
+            </div>
+            <div class="collection-slider__item__content-wrapper">
+                <h3 class="collection-slider__item__title">
+                    {{ block.settings.collection.title }}
+                </h3>
+                <a href="{{ block.settings.collection.url }}" class="karhu-link collection-slider__item_link">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Collection slider",
+    "presets": [
+        {
+            "category": "Karhu",
+            "name": "Collection slider"
+        }
+    ],
+    "settings": [],
+    "blocks": [
+        {
+            "name": "Collection item",
+            "type": "collection_item",
+            "settings": [
+                {
+                    "id": "collection",
+                    "type": "collection",
+                    "label": "Choose collection to display"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

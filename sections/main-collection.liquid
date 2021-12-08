@@ -1,0 +1,44 @@
+{{ 'main-collection.css' | asset_url | stylesheet_tag }}
+
+<section class="main-collection">
+    <div class="main-collection__img-wrapper">
+        <img src="{{ section.settings.img | img_url: 'master' }}" alt="{{ section.settings.collection.title }}" class="main-collection__img">
+    </div>
+    <div class="main-collection__content-wrapper">
+        <h1 class="main-collection__heading">
+            {{ section.settings.heading }}
+        </h1>
+        <a href="{{ section.settings.collection.url }}" class="karhu-link main-collection__link">
+            Shop Collection
+        </a>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Main collection banner",
+    "presets": [
+        {
+            "category": "Banner",
+            "name": "Main collection banner"
+        }
+    ],
+    "settings": [
+        {
+            "id": "img",
+            "type": "image_picker",
+            "label": "Background image"
+        },
+        {
+            "id": "collection",
+            "type": "collection",
+            "label": "Choose a collection for the collection's link"
+        },
+        {
+            "id": "heading",
+            "type": "text",
+            "label": "Write heading"
+        }
+    ]
+}
+{% endschema %}
