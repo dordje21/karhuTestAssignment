@@ -19,7 +19,8 @@
     line-height: 27px;
     color: white;
     text-decoration: none;
-    width: 240px;
+    width: 25%;
+    max-width: 240px;
     height: 56px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     transition: .25s;
@@ -40,6 +41,7 @@
 
 @media (max-width: 480px) {
     .karhu-link {
-        width: 180px;
+        width: 45%;
+        max-width: 180px;
     }
 }

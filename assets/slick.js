@@ -147,6 +147,7 @@
             dataSettings = $(element).data('slick') || {};
             _.options = $.extend({}, _.defaults, settings, dataSettings);
             _.options.slidesToScroll = 1;
+            console.log(_.activeBreakpoint);
             _.currentSlide = _.options.initialSlide;
 
             _.originalSettings = _.options;
