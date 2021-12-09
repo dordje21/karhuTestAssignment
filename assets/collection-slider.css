@@ -100,11 +100,11 @@ body {
 }
 
 .slick-prev:before {
-    content: '←';
+    content: '←' !important;
 }
 
 .slick-next:before {
-    content: '→';
+    content: '→' !important;
 }
 
 .slick-prev:before,

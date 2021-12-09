@@ -395,5 +395,11 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "karhu": {
+    "buttons": {
+      "shop_now": "Shop Now",
+      "shop_collection": "Shop Collection"
+    }
   }
 }
