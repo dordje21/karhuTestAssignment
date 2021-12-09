@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 
-.collection-slider__item__title {
+.collection-slider__item_title {
     font-weight: bold;
     font-size: 35px;
     line-height: 40px;
