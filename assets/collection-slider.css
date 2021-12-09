@@ -126,10 +126,6 @@
         height: 500px;
     }
 
-    .main-collection__img-wrapper {
-        padding-left: 80%;
-    }
-
     .main-collection__heading {
         font-size: 53px;
         line-height: 60px;
@@ -139,9 +135,5 @@
     .collection-slider__item_link {
         width: 125px;
         height: 48px;
-    }
-
-    .collection-slider__item__content-wrapper {
-        /* padding-bottom: 30px; */
     }
 }
