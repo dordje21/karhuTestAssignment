@@ -39,9 +39,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* padding-bottom: 40px;
-    padding-top: 48%;
-    padding-right: 14%; */
 }
 
 .collection-slider__item__title {
@@ -54,8 +51,8 @@
 }
 
 .collection-slider__item_link {
-    width: 180px;
-    height: 56px;
+    width: 50%;
+    height: 11.2%;
     font-size: 16px;
 }
 
@@ -115,7 +112,7 @@
 }
 
 .slick-disabled {
-    /* display: none !important; */
+    display: none !important;
 }
 
 
