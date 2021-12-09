@@ -8,6 +8,7 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     <link href="//db.onlinewebfonts.com/c/031da03967812d134ed68febd3ba78a9?family=GT+America" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     
 
@@ -177,45 +178,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script> -->
-
     <script type="text/javascript" src="{{ 'slick.js' | asset_url }}"></script>
-    <script>
-      $(document).ready(function(){
-        $("#collection-slider__karhu").slick({
-          slidesToScroll: 1,
-          slidesToShow: 4,
-          dots: false,
-          infinite: false,
-          speed: 300,
-          variableWidth: true,
-          // initialSlide: 3.25,
-          // accessibility: false,
-          // respondTo: 'slider',
-          // adaptiveHeight: true,
-          // respondTo: "window",
-          outerEdgeLimit: true,
-          arrows: true,
-          draggable: true,
-          responsive: [
-            {
-              breakpoint: 769,
-              settings: {
-                slidesToShow: 2.5,
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                slidesToShow: 1.5,
-              }
-            }
-          ]
-        });
-      });
-        
-    </script>
   </body>
 </html>

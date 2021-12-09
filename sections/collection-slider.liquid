@@ -24,6 +24,43 @@
     </div>
 </section>
 
+<script>
+    $(document).ready(function(){
+      $("#collection-slider__karhu").slick({
+        slidesToScroll: 1,
+        slidesToShow: 4,
+        dots: false,
+        infinite: false,
+        speed: 300,
+        variableWidth: true,
+        // initialSlide: 3.25,
+        // accessibility: false,
+        // respondTo: 'slider',
+        // adaptiveHeight: true,
+        // respondTo: "window",
+        outerEdgeLimit: true,
+        arrows: true,
+        draggable: true,
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2.5,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              slidesToShow: 1.5,
+            }
+          }
+        ]
+      });
+    });
+      
+  </script>
+
 {% schema %}
 {
     "name": "Collection slider",
