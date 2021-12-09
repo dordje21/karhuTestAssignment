@@ -178,16 +178,24 @@
     {%- endif -%}
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script> -->
 
+    <script type="text/javascript" src="{{ 'slick.js' | asset_url }}"></script>
     <script>
+      $(document).ready(function(){
         $("#collection-slider__karhu").slick({
+          slidesToScroll: 1,
+          slidesToShow: 4,
           dots: false,
           infinite: false,
           speed: 300,
-          slidesToShow: 3.5,
-          slidesToScroll: 1,
-          accessibility: false,
+          variableWidth: true,
+          // initialSlide: 3.25,
+          // accessibility: false,
+          // respondTo: 'slider',
+          // adaptiveHeight: true,
+          // respondTo: "window",
+          outerEdgeLimit: true,
           arrows: true,
           draggable: true,
           responsive: [
@@ -195,7 +203,6 @@
               breakpoint: 769,
               settings: {
                 slidesToShow: 2.5,
-                slidesToScroll: 1
               }
             },
             {
@@ -203,11 +210,12 @@
               settings: {
                 arrows: false,
                 slidesToShow: 1.5,
-                slidesToScroll: 1
               }
             }
           ]
         });
+      });
+        
     </script>
   </body>
 </html>
