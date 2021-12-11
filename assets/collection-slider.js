@@ -1,18 +1,18 @@
 $(document).ready(function () {
     $("#collection-slider__karhu").slick({
         slidesToScroll: 1,
-        slidesToShow: 4,
+        slidesToShow: 3.5,
         dots: false,
         infinite: false,
         speed: 300,
-        outerEdgeLimit: true,
         arrows: true,
         draggable: true,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 769,
                 settings: {
-                    slidesToShow: 2.5,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -22,8 +22,6 @@ $(document).ready(function () {
                     slidesToShow: 1.5,
                 }
             }
-        ],
-
-        variableWidth: true
+        ]
     });
 });

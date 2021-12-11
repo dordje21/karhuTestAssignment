@@ -1,8 +1,7 @@
 {{ 'collection-slider.css' | asset_url | stylesheet_tag }}
 
 <section class="collection-slider__wrapper">
-    <div class="collection-slider" data-slick='{"slidesToShow": 3.5, "slidesToScroll": 4}'
-        id="collection-slider__karhu">
+    <div class="collection-slider" id="collection-slider__karhu">
         {% for block in section.blocks %}
         {% if block.type == "collection_item" %}
         <div class="collection-slider__item">
